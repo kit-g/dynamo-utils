@@ -1,0 +1,16 @@
+version = 0.1
+[dev]
+[dev.deploy]
+[dev.deploy.parameters]
+stack_name = "TestDatabaseFormation"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-s9igikus68j1"
+s3_prefix = "TestDatabaseFormation"
+region = "ca-central-1"
+profile = "dev"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = """
+    Environment=\"dev\"
+"""
+image_repositories = []
+
