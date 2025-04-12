@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='dynamo-utils',
-    version='0.1.0',
+    version='0.4.7',
     description='Python utils for DynamoDB',
     url='',
     author='Kit G.',

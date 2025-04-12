@@ -105,7 +105,7 @@ class DynamoModel(ABC):
         return {
             key: {
                 self.dynamo_type(value): str(value)
-                if isinstance(value, int) and not isinstance(value, bool)
+                if (isinstance(value, int) or isinstance(value, float)) and not isinstance(value, bool)
                 else value
             }
             for key, value
